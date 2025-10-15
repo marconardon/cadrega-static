@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alla Cadrega - Trattoria Tipica Milanese</title>
+    <meta name="description" content="Trattoria tipica milanese con pizzeria nel cuore del Centro Direzionale di Milano. Scopri i nostri piatti della tradizione e prenota il tuo tavolo.">
+
+    <!-- Google Fonts: Cabin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JS (deferred for performance) -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="index.html" class="logo">Alla Cadrega</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+                <li><a href="#prenota" class="btn btn-primary">Prenota Ora</a></li>
+            </ul>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sezione 1: Hero -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Benvenuti Alla Cadrega</h1>
+                <p>Trattoria Tipica Milanese con Pizzeria</p>
+            </div>
+        </section>
+
+        <!-- Sezione 2: O mia bela trattoria -->
+        <section id="about1" class="content-section">
+            <div class="text-content">
+                <h2>O mia bela trattoria</h2>
+                <p>Da più di 20 anni offriamo ai nostri clienti un’esperienza culinaria semplice e rilassata, ispirata dalla tradizione Milanese, nella location strategica del Centro Direzionale, a due passi da piazza Gae Aulenti.</p>
+            </div>
+            <div class="gallery">
+                <a href="/img/sala-interna-1.webp" class="lightbox-trigger"><img src="/img/miniatures/sala-interna-1-300x225.webp" alt="Sala interna vista da davanti"></a>
+                <a href="/img/sala-interna-2.webp" class="lightbox-trigger"><img src="/img/miniatures/sala-interna-2-300x225.webp" alt="Sala interna vista da dietro"></a>
+                <a href="/img/sala-pubblico.webp" class="lightbox-trigger"><img src="/img/miniatures/sala-pubblico-300x240.webp" alt="Pubblico in sala"></a>
+                <a href="/img/saletta-pubblico.webp" class="lightbox-trigger"><img src="/img/miniatures/saletta-pubblico-300x240.webp" alt="Pubblico in saletta"></a>
+            </div>
+        </section>
+
+        <!-- Sezione 3: Una calorosa accoglienza -->
+        <section id="about2" class="content-section reverse">
+            <div class="text-content">
+                <h2>Una calorosa accoglienza</h2>
+                <p>Da noi è possibile apprezzare il calore dell’atmosfera milanese e l’ospitalità e la cordialità del nostro servizio in sala, creando un ambiente ideale per un incontro di lavoro o per un momento passato con la propria famiglia.</p>
+            </div>
+            <div class="gallery">
+                <a href="/img/sala_notte_1.webp" class="lightbox-trigger"><img src="/img/miniatures/sala_notte_1-300x240.webp" alt="Sala di notte"></a>
+                <a href="/img/sala_notte_2.webp" class="lightbox-trigger"><img src="/img/miniatures/sala_notte_2-300x240.webp" alt="Sala di notte"></a>
+                <a href="/img/sala_notte_pubblico-1.webp" class="lightbox-trigger"><img src="/img/miniatures/sala_notte_pubblico-1-300x240.webp" alt="Pubblico in sala di notte"></a>
+                <a href="/img/bottiglie_bar.webp" class="lightbox-trigger"><img src="/img/miniatures/bottiglie_bar-300x240.webp" alt="Bottiglie al bar"></a>
+            </div>
+        </section>
+
+        <!-- Sezione 4: Le nostre specialità -->
+        <section id="specialties" class="content-section">
+            <div class="text-content">
+                <h2>Le nostre specialità</h2>
+                <ul class="specialties-list">
+                    <li><strong>Mondeghili</strong> - <span>€ 10,00</span></li>
+                    <li><strong>Risotto alla Milanese</strong> - <span>€ 14,00</span></li>
+                    <li><strong>Cotoletta alla Milanese</strong> - <span>€ 22,00</span></li>
+                    <li><strong>Ossobuco con Risotto</strong> - <span>€ 25,00</span></li>
+                </ul>
+            </div>
+            <div class="gallery">
+                <a href="/img/mondeghili.webp" class="lightbox-trigger"><img src="/img/miniatures/mondeghili-300x225.webp" alt="Foto Mondeghili"></a>
+                <a href="/img/risotto_alla_milanese.webp" class="lightbox-trigger"><img src="/img/miniatures/risotto_alla_milanese-1-300x225.webp" alt="Foto Risotto alla Milanese"></a>
+                <a href="/img/cotoletta.webp" class="lightbox-trigger"><img src="/img/miniatures/cotoletta-300x225.webp" alt="Foto Cotoletta alla Milanese"></a>
+                <a href="/img/ossobuco_e_risotto.webp" class="lightbox-trigger"><img src="/img/miniatures/ossobuco_e_risotto-300x225.webp" alt="Foto Ossobuco con Risotto"></a>
+            </div>
+        </section>
+
+        <!-- Sezione 5: Vieni a trovarci -->
+        <section id="cta" class="cta-section">
+            <h2>Vieni a trovarci</h2>
+            <div class="cta-buttons">
+                <a href="dove-siamo.html" class="btn btn-secondary">Guarda dove siamo</a>
+                <a href="prenota.html" class="btn btn-primary">Prenota il tuo tavolo</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Alla Cadrega. Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+</body>
+</html>
