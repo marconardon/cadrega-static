@@ -3,42 +3,44 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lightbox functionality
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxTriggers = document.querySelectorAll('.lightbox-trigger');
     const closeBtn = document.querySelector('.lightbox-close');
 
-    if (lightbox && lightboxImg && lightboxTriggers.length > 0 && closeBtn) {
-        lightboxTriggers.forEach(trigger => {
-            trigger.addEventListener('click', e => {
-                e.preventDefault();
-                const imgSrc = trigger.getAttribute('href');
-                lightboxImg.setAttribute('src', imgSrc);
-                lightbox.style.display = 'flex';
-            });
+    document.querySelectorAll('.lightbox-trigger').forEach(trigger => {
+        trigger.addEventListener('click', e => {
+            e.preventDefault();
+            lightbox.style.display = 'flex';
+            lightboxImg.src = trigger.href;
         });
+    });
 
-        const closeLightbox = () => {
+    if(closeBtn) {
+        closeBtn.addEventListener('click', () => {
             lightbox.style.display = 'none';
-            lightboxImg.setAttribute('src', ''); // Clear src for performance
-        }
+        });
+    }
 
-        closeBtn.addEventListener('click', closeLightbox);
+    if(lightbox) {
         lightbox.addEventListener('click', e => {
-            // Close lightbox if the background is clicked, but not the image itself
             if (e.target === lightbox) {
-                closeLightbox();
+                lightbox.style.display = 'none';
             }
         });
     }
 
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.mobile-nav-toggle');
+    // Mobile navigation
+    const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const mainNav = document.querySelector('.main-nav ul');
 
-    if (navToggle && mainNav) {
-        // This is a basic toggle. A real implementation would be more complex,
-        // creating a proper mobile menu overlay.
-        navToggle.addEventListener('click', () => {
-            alert('Menu mobile da implementare!');
+    if (mobileNavToggle && mainNav) {
+        mobileNavToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mainNav.classList.remove('active');
+            });
         });
     }
+
 });
