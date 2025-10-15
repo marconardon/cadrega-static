@@ -30,10 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile navigation
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
     const mainNav = document.querySelector('.main-nav ul');
+    const closeMenuBtn = document.querySelector('.close-menu-btn');
 
-    if (mobileNavToggle && mainNav) {
+    if (mobileNavToggle && mainNav && closeMenuBtn) {
         mobileNavToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
+            mainNav.classList.add('active');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mainNav.classList.remove('active');
         });
 
         mainNav.querySelectorAll('a').forEach(link => {

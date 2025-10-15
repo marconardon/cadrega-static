@@ -292,6 +292,20 @@ h2 {
         transform: translateY(0);
         display: flex;
     }
+
+    .close-menu-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .close-menu-btn button {
+        background: none;
+        border: none;
+        color: var(--text-color-dark);
+        font-size: 3rem;
+        cursor: pointer;
+    }
     
     .content-section {
         flex-direction: column;
