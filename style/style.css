@@ -278,10 +278,6 @@ h2 {
         flex-direction: column;
     }
 
-    .content-section.reverse {
-        flex-direction: column-reverse;
-    }
-
     .cta-buttons {
         flex-direction: column;
     }
