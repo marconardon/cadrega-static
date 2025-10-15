@@ -294,6 +294,11 @@ h2 {
     }
 
     .close-menu-btn {
+        display: none;
+    }
+
+    .main-nav ul.active .close-menu-btn {
+        display: block;
         position: absolute;
         top: 2rem;
         right: 2rem;
