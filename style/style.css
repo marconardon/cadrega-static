@@ -42,6 +42,7 @@ h1 {
     margin-right: 0px;
     letter-spacing: .2em;
     font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-display: swap;
     font-weight: 400;
     color: #252525;
     text-transform: uppercase;
@@ -55,8 +56,10 @@ h2 {
     color: var(--primary-color);
     text-align: center;
     font-family: 'Lovers Quarrel', cursive;
+    font-display: swap;
     font-weight: 400;
     margin-bottom: -2.5rem;
+    margin-top: -2rem;
 }
 
 /* --- Header & Navigation --- */
@@ -248,6 +251,7 @@ h2 {
     color: #666;
     margin-top: 0.25rem;
     padding-left: 1rem;
+    text-align: left;
 }
 
 /* --- CTA Section --- */
