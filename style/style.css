@@ -46,7 +46,7 @@ h1 {
     color: #252525;
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     line-height: 1.03128;
 }
 
@@ -179,6 +179,9 @@ h2 {
 }
 
 /* --- Content Sections --- */
+.separator {
+    margin-bottom: 1.2rem;
+}
 .content-section {
     display: flex;
     gap: 2rem;
@@ -190,6 +193,7 @@ h2 {
 
 .text-content {
     flex: 1;
+    text-align: center;
 }
 
 .gallery {
@@ -275,28 +279,17 @@ h2 {
     text-align: center;
 }
 
-#divider1 {
-    background-image: url('/img/sala-pubblico.webp');
+#divider {
+    background-image: url('/img/hero/muro-1200x469.webp');
 }
 
 #divider2 {
-    background-image: url('/img/sala_notte_1.webp');
-}
-
-#divider3 {
-    background-image: url('/img/bottiglie_bar.webp');
-}
-
-#divider4 {
-    background-image: url('/img/cotoletta.webp');
+    background-image: url('/img/hero/campo_di_grano_esteso-1024x320.webp');
 }
 
 .divider-content {
     position: relative;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2rem;
-    border-radius: 5px;
 }
 
 .divider-content h1 {
