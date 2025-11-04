@@ -1,3 +1,46 @@
+/* --- Fonts --- */
+@font-face {
+    font-family: 'Cabin';
+    src: url('/style/fonts/Cabin-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('/style/fonts/Cabin-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('/style/fonts/Cabin-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cabin';
+    src: url('/style/fonts/Cabin-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lovers Quarrel';
+    src: url('style/fonts/LoversQuarrel-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 /* --- CSS Variables --- */
 :root {
     --primary-color: #3e1005;
@@ -41,7 +84,7 @@ h1 {
     font-size: 3rem;
     margin-right: 0px;
     letter-spacing: .2em;
-    font-family: Cabin, "SF Pro Text", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: Cabin, sans-serif;
     font-display: swap;
     font-weight: 400;
     color: #252525;
